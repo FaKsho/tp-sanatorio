@@ -11,4 +11,21 @@
  * el tipo de Dieta.
  * 
  * El Departamento de Clínica Medica desea poder recetar estudios a los Adultos e Internados de : Rx. y Sangre,
+ *
+ *
  */
+
+import Pacientes.Adulto;
+import Pacientes.Paciente;
+
+public class Main {
+
+    public static void main(String [] args) {
+
+        // Hacer una lista de pacientes
+
+        //Paciente pAdulto = new Adulto();
+
+
+    }
+}
