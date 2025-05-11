@@ -3,14 +3,18 @@ package Pacientes;
 public class Internado extends Paciente implements Dietable, Estudiable{
 
     private String dieta;
+    private int numeroHabitacion;
+    private String presionArterial;
+    private String tipoSangre;
 
-    public Internado(String dieta) {
-        this.dieta = dieta;
+    public Internado() {
     }
 
-    public Internado(String nombre, String dni, String obraSocial, String dieta) {
+    public Internado(String nombre, String dni, String obraSocial, String tipoSangre, String presionArterial, int numeroHabitacion) {
         super(nombre, dni, obraSocial);
-        this.dieta = dieta;
+        this.tipoSangre = tipoSangre;
+        this.presionArterial = presionArterial;
+        this.numeroHabitacion = numeroHabitacion;
     }
 
     @Override

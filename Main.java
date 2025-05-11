@@ -15,17 +15,28 @@
  *
  */
 
+import Departamentos.DepAdministracion;
+import Departamentos.DepClinicaMedica;
+import Departamentos.DepNutricion;
 import Pacientes.Adulto;
-import Pacientes.Paciente;
+import Pacientes.Internado;
+import Pacientes.Pediatrico;
 
 public class Main {
 
     public static void main(String [] args) {
 
-        // Hacer una lista de pacientes
+        Adulto pacienteAdulto = new Adulto("Jose Da Silva", "29547589", "IPS", "120/60", 75.5, 175);
+        Pediatrico pacientePediatrico = new Pediatrico("Marta González", "49124879", "Swiss Medical", "Jorge González", 9.7, "3764996633");
+        pacientePediatrico.setDieta("Prohibición completa de bebidas sintéticas");
+        Internado pacienteInternado = new Internado("Mario Lopez", "25365978", "IPS", "O+", "110/45", 55);
 
-        //Paciente pAdulto = new Adulto();
+        System.out.println(DepNutricion.getDietaDe(pacienteAdulto));
+        System.out.println(DepNutricion.getDietaDe(pacientePediatrico));
 
+        System.out.println(DepAdministracion.getDatos(pacienteInternado));
+
+        DepClinicaMedica.recetarEstudio(pacienteInternado, 2);
 
     }
 }

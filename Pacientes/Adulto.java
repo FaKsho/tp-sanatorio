@@ -4,8 +4,19 @@ import Pacientes.Paciente;
 
 public class Adulto extends Paciente implements Estudiable{
 
-    public Adulto(String nombre, String dni, String obraSocial) {
+    private String PresionArterial;
+    private double peso;
+    private double altura;
+
+    public Adulto() {
+
+    }
+
+    public Adulto(String nombre, String dni, String obraSocial, String presionArterial, double peso, double altura) {
         super(nombre, dni, obraSocial);
+        PresionArterial = presionArterial;
+        this.peso = peso;
+        this.altura = altura;
     }
 
     @Override
