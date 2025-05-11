@@ -7,7 +7,7 @@
  * Por otra parte el Departamento de Administración desea poder obtener de todos: 
  * cobertura de la OS, Descuento y Vademecum.
  * 
- * El Departamento de Nutrición desea poder obtener de los Internado y pediátricos: 
+ * El Departamento de Nutrición desea poder obtener de los Internados y pediátricos:
  * el tipo de Dieta.
  * 
  * El Departamento de Clínica Medica desea poder recetar estudios a los Adultos e Internados de : Rx. y Sangre,

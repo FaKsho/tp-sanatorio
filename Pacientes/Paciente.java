@@ -1,8 +1,9 @@
 package Pacientes;
 public abstract class Paciente {
-    public String nombre;
-    public String dni;
-    public String obraSocial;
+    private String nombre;
+    private String dni;
+    private String obraSocial;
+    private String vademecum;
 
     public Paciente() {
     }
@@ -15,8 +16,13 @@ public abstract class Paciente {
 
     public abstract String getCoberturaOS();
     public abstract int getDescuento();
-    public abstract String getVademecum();
 
+    public void setVademecum(String vademecum) {
+        this.vademecum = vademecum;
+    }
+    public String getVademecum() {
+        return vademecum;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -35,6 +41,4 @@ public abstract class Paciente {
     public void setObraSocial(String obraSocial) {
         this.obraSocial = obraSocial;
     }
-
-
 }
